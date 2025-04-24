@@ -1,0 +1,97 @@
+body {
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.4s;
+  overflow-x: hidden;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: middle;
+}
+
+body.overflow-hidden {
+  overflow: hidden;
+  background: red;
+}
+
+body b {
+  font-weight: 700;
+  color: inherit;
+}
+
+main {
+  min-height: calc(max(calc(100vh - 614px), 350px));
+}
+
+#page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  min-height: 100%;
+  max-width: 100%;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+button {
+  background: none;
+}
+
+.btn {
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  padding: 20px 50px;
+  transition: 0.4s;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn--green {
+ background: linear-gradient(90deg, #04694B 0%, #11A87B 100%);
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(90deg, #11A87B 0%, #04694B 100%);;
+  }
+}
+
+.input-style {
+  input,
+  textarea {
+    color: #1e222d;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    background: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    border-radius: 5px;
+
+    &::placeholder {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      color: #1e222d;
+    }
+  }
+
+  & + .input-style {
+    margin-top: 10px;
+  }
+}
+
