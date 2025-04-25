@@ -3,7 +3,7 @@
         <div class="message__wrapper p-5">
             <MessageQueue :message="currentMessage"  @dismiss="handleDismiss" />
             <MessageList :messages="messages" :hidden-messages="hiddenMessages"/>
-            <div class="d-flex mt-3">
+            <div class="d-flex  mt-3 gap-3">
                 <MessageInput v-model="newMessage" />
                 <SendButton @send="handleSend" />
             </div>
