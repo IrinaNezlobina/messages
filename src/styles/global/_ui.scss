@@ -67,32 +67,3 @@ textarea {
     background: linear-gradient(90deg, #11A87B 0%, #04694B 100%);;
   }
 }
-
-.input-style {
-  input,
-  textarea {
-    color: #1e222d;
-    padding: 20px;
-    width: 100%;
-    border: none;
-    background: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    border-radius: 5px;
-
-    &::placeholder {
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 120%;
-      color: #1e222d;
-    }
-  }
-
-  & + .input-style {
-    margin-top: 10px;
-  }
-}
-
